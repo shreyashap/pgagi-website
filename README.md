@@ -2,14 +2,14 @@
 
 # PGAGI website
 
-[Your Project Name] is a modern web application built with Next.js and styled using Tailwind CSS. It offers a responsive, fast, and sleek user interface, making it perfect for [briefly describe the purpose or target users of the app].
+This is a modern web application built with Next.js and styled using Tailwind CSS. It offers a responsive, fast, and sleek user interface, making it perfect for [briefly describe the purpose or target users of the app].
 
 ## Features
 
 - List the key features of your application.
 - Responsive design.
 - Fast loading times.
-- [Add more features here.]
+- more features soon...
 
 ## Prerequisites
 
@@ -28,8 +28,8 @@ These instructions will get you a copy of the project up and running on your loc
 First, clone the repository to your local machine using Git.
 
 ```bash
-git clone https://github.com/[YourUsername]/[YourProjectName].git
-cd [YourProjectName]
+git clone https://github.com/PG-AGI/pgagi-website.git
+cd pgagi-website
 ```
 
 ### Installing Dependencies
