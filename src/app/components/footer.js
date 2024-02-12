@@ -149,7 +149,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <p className="text-base text-body-color ">
-                  &copy; 2024 Pg-Agi. All rights reserved.
+                  &copy; 2024 PG-AGI. All rights reserved.
                 </p>
               </div>
             </div>
