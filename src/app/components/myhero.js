@@ -54,14 +54,14 @@ export default function HeroSection() {
     return (
         <div>
 
-            <div className="container max-w-screen-xl mx-auto px-4 bg-white md:ml-8 lg:ml-16 xl:ml-24">
+            <div className="container max-w-screen-xl mx-auto px-4 bg-white ">
 
 
 
-                <div className="flex flex-col md:flex-row justify-between space-x-2 md:">
-                    <div className="text-center md:text-left mt-32 md:w-[55%] ">
+                <div className="flex flex-col md:flex-row justify-between space-x-2 ">
+                    <div className="text-center md:text-left mt-32 md:w-[55%] md:ml-8 lg:ml-12 xl:ml-16 ">
                         <div className="font-medium text-white-900 text-sm md:text-md leading-normal md:mb-2 "> Start automating your tasks now</div>
-                        <div className="font-extrabold text-white-900 text-3xl md:text-6xl leading-normal mb-3 mygrad ">Your Go-To <br/>AI Consultancy
+                        <div className="font-extrabold text-white-900 text-3xl md:text-4xl  lg:text-5xl xl:text-6xl leading-normal mb-3 mygrad ">Your Go-To <br/>AI Consultancy
                             <div className="md:pt-1 lg:pt-5"> for {' '}
 
                                 <TypeAnimation

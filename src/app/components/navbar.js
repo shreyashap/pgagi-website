@@ -9,11 +9,11 @@ import Image from 'next/image';
 export default function Navbar() {
 
     return (
-        <div className="bg-white border-b-2 h-24 hidden md:flex md:justify-evenly md:px-8 lg:px-12 xl:px-24">
+        <div className="bg-white border-b-2 h-24 hidden md:flex md:justify-evenly md:px-8 lg:px-12 xl:px-24 ">
 
             {/* logo */ }
-            <div className='flex items-center justify-center'>
-      <div className='flex-shrink-0'>
+            <div className='flex items-center justify-center xl:pl-16 md:pl-10'>
+      <div className='flex-shrink-0  ' >
         <Image src="/images/pgagi.png" alt="Company logo" className="h-14 object-contain" width={60} height={60}/>
       </div>
       
@@ -22,7 +22,7 @@ export default function Navbar() {
 
             {/* navbar links */}
             <div className="header-links contents font-semibold text-base lg:text-base ">
-                <ul className="flex items-center ml-4  lg:ml-8 xl:ml-12 lg:mr-8">
+                <ul className="flex items-center ml-4  lg:ml-5 xl:ml-2 lg:mr-8">
                     <li className="p-2.5 xl:p-6 text-center">
                         <a href="">
                             <span>Our Projects</span>
