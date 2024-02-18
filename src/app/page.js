@@ -3,6 +3,7 @@ import HeroSection from "./components/myhero";
 
 import Navbar from "./components/navbar";
 
+
 import React from "react";
 import PartnerCompanies from "./components/partner";
 

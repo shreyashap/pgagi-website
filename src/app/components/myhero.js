@@ -115,11 +115,11 @@ export default function HeroSection() {
                         </div>
                         </div>
 
-                        <div className="w-full flex flex-col gap-4 md:flex-row md:justify-start justify-between items-center lg:gap-6 md:gap-6 ">
+                        <div className="w-full flex  flex-col gap-4 md:flex-row md:justify-start justify-between items-center lg:gap-6 md:gap-6 ">
                       <Calendlylink/>
 
 
-                        <button className="  border border-primary  hover:bg-blue-500 hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center gap-3">
+                        <button className="  border border-primary shadow-md hover:bg-blue-500 hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center gap-3">
                             <Mysvg />
 
                             <span>See case studies</span>

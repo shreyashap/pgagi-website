@@ -57,7 +57,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="javascript:void(0)"
+            href="https://www.linkedin.com/company/pg-agi/"
             className="mr-3 flex h-10 w-10 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white  sm:mr-4 lg:mr-3 xl:mr-4"
           >
             <svg
