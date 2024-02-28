@@ -12,9 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head> {/* Add Head component here */}
-        <title>{metadata.title}</title> {/* Set title dynamically */}
-        <link rel="/images/pgagi.png" href="/favicon.ico" /> {/* Add favicon */}
+      <Head>
+        {/* Set title dynamically */}
+        <title>{metadata.title}</title>
+        {/* Add favicon */}
+        <link rel="icon" href="/images/pgagi.png" />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>

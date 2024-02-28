@@ -14,17 +14,19 @@ const Calendlylink = () => {
 
     return (
         <div className="App" id="root">
-            <div className="bg-primary hover:bg-blue-800 shadow-lg text-white font-bold py-2 px-4 rounded inline-flex items-center gap-3 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer">
-                {rootElement && (
-                    <PopupButton
-                        url={url}
-                        rootElement={rootElement}
-                        text="Book a Call"
-                    ></PopupButton>
-                )}
-            </div>
+           <div className="bg-primary hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-lg inline-flex items-center gap-3 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 cursor-pointer">
+    {rootElement && (
+        <PopupButton
+            url={url}
+            rootElement={rootElement}
+            text="Book a Call"
+        ></PopupButton>
+    )}
+</div>
+
         </div>
     );
 };
 
 export default Calendlylink;
+
