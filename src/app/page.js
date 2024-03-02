@@ -4,6 +4,7 @@ import HeroSection from "./components/myhero";
 import Navbar from "./components/navbar";
 import Design from "./components/design";
 import Cards from "./components/cards";
+import Book from "./components/bookcall";
 
 
 import React from "react";
@@ -21,6 +22,8 @@ export default function Page() {
       </div>
       <Design/>
       <Cards/>
+      <Book/>
+      
       <Footer />
       
     </div>
