@@ -6,49 +6,49 @@ const ServicesData = [
     id: 1,
     span: 'Phase 1',
     img: 'images/img1.png ',
-    name: "AI Audit",
+    name: "Discovery and Feasibility",
     description:
-      "is a reference book containing word definitions,serves as a valuable tool"
+      "Assessing AI's potential to innovate and validating the initial concept with a POC."
   },
   {
     id: 2,
     span: 'Phase 2',
     img: 'images/img2.png',
-    name: "Research",
+    name: "Data Preparation and Research",
     description:
-      "Sharpen your skills with interactive quizzes that reinforce learning.",
+      "Curating and refining data sets to lay the groundwork for tailored AI solutions.",
   },
   {
     id: 3,
     span: 'Phase 3',
     img: 'images/img3.png ',
-    name: "AI strategy",
+    name: "Model Development and Strategy",
     description:
-      "Monitor your learning journey with our progress tracking feature. ",
+      "Crafting and training bespoke AI models, strategizing for integration and scalability.",
   },
   {
     id: 4,
     span: 'Phase 4',
     img: 'images/img4.png',
-    name: "AI Conception",
+    name: "MVP Creation",
     description:
-      "Learning meets fun! Engage in interactive educational games ",
+      "Building a functional Minimum Viable Product that embodies the AI solution for user feedback.",
   },
   {
     id: 5,
     span: 'Phase 5',
     img: 'images/img6.png',
-    name: "Visual and UI design",
+    name: "Quality Assurance",
     description:
-      "Facilitate communication between parents and teachers. ",
+      "Testing and refining the AI MVP, prioritizing performance, and user-centric enhancements.",
   },
   {
     id: 6,
     span: 'Phase 6',
     img: 'images/img7.png',
-    name: "QA and analysis",
+    name: "Deployment and Evaluation",
     description:
-      "Our platform offers multilingual support, ensuring that children ",
+      "Launching the AI product with ongoing evaluation and optimization for peak performance.",
   },
 ];
 
@@ -60,7 +60,7 @@ const Services = () => {
           <div className="container mx-auto w-3/5">
             <div className="mb-auto text-center max-w-[400px] mx-auto">
               <h1 className="text-4xl font-bold text-black dark:text-white">
-                Here's how we make <br />
+                Here&apos;s how we make <br />
                 products grow
               </h1>
               <p className="text-sm text-black dark:text-gray-400">
@@ -76,7 +76,7 @@ const Services = () => {
                     key={service.id}
                     data-aos="zoom-in"
                     data-aos-duration="300"
-                    className="rounded-2xl mb-5 bg-white dark:bg-gray-700 relative shadow-xl duration-high group h-[320px] transition-transform hover:-translate-y-2 flex flex-col justify-between"
+                    className="rounded-2xl mb-5 bg-white relative shadow-xl duration-high group h-[320px] transition-transform hover:-translate-y-2 flex flex-col justify-between"
                   >
                     <div className="mt-5 h-[240px] w-[240px] flex items-center justify-center overflow-hidden mx-auto">
                       <img

@@ -5,7 +5,7 @@ const Design = () => {
   const initialContent = {
     paragraph: (
       <>
-        These problems, being so common, call for <br /> decisive and drastic solutions.<br />The solutions, below, however, only scratch the <br /> surface of the deep underlying problems.
+        These problems, being so common, call for decisive and drastic solutions. The solutions, below, however, only scratch the surface of the deep underlying problems.
       </>
     ),
     listItems: ['Low activation and adoption', 'Low Retention', 'Less churn']
@@ -22,7 +22,7 @@ const Design = () => {
       setContent({
         paragraph: (
           <>
-            For most tech ventures, product performance is<br /> synonymous with business performance.<br />However, despite the vitality of the product's<br /> success, the problems below couldn't be any more common.
+            For most tech ventures, product performance is synonymous with business performance. However, despite the vitality of the product&apos;s success, the problems below couldn&apos;t be any more common.
           </>
         ),
         listItems: ['Low activation and adoption', 'Low Retention', 'Less churn']
@@ -31,7 +31,7 @@ const Design = () => {
       setContent({
         paragraph: (
           <>
-            These problems, being so common, call for <br /> decisive and drastic solutions.<br />The solutions, below, however, only scratch the <br /> surface of the deep underlying problems.
+            These problems, being so common, call for decisive and drastic solutions. The solutions, below, however, only scratch the surface of the deep underlying problems.
           </>
         ),
         listItems: ['Hire more people', 'Launch new features', 'Increase the Marketing & Sales Budget', 'Retarget customers']
@@ -41,23 +41,23 @@ const Design = () => {
       setThirdSVGContent({
         paragraph: (
           <>
-            Before pouring your budget into marketing, team<br />composition, and sales, you should build a solid <br /> foundation with an outstanding product <br /> experience.We design products that market<br /> themselves to make your job that much easier.
+            Before reallocating resources to marketing or sales, ensure your product&apos;s core is AI-enhanced for smarter performance. Our AI solutions elevate your product by
           </>
         ),
         listItems: [
-          'Boost perceived value',
-          'Revamp the User Experience',
-          'In-depth research to inform product design',
-          'Foster our clients UX maturity',
-          'Validating all product ideas before going all in'
+          'Predictive Analytics Enhancement',
+          'Personalized Experience Algorithms',
+          'Data-Informed Design Insights',
+          'Advanced Interaction Intelligence',
+          'Insight-Driven Feature Development',
         ]
       });
     }
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="flex flex-col items-center">
+    <div className="flex items-center justify-center h-screen" >
+      <div className="flex flex-col items-center" style={{width:'70%'}}>
         <h1 className="text-5xl text-center mb-4 font-extrabold">Have you ever been <br /> down this road?</h1>
         <p className="text-lg mb-12">Our AI Agency can help</p>
         <div className="flex items-start">

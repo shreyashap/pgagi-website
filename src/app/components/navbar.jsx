@@ -59,7 +59,7 @@ export default function Navbar() {
         
              <div>
             {/* Thin horizontal blue line */}
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '30px', backgroundColor: '#2D63D7', width: '100%' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '30px', backgroundColor: '#14213d', width: '100%' }}>
         <span style={{ marginRight: '10px' }} className='text-white'>AI Calling Agent</span>
         <div>
             <span style={{ fontWeight: 'bold' }} className='text-white' >Learn more</span>
@@ -85,25 +85,25 @@ export default function Navbar() {
                         </li>
                         <li className="p-2.5 xl:p-6">
                             <button onMouseEnter={() => toggleSolutions('Solutions')}  className="focus:outline-none flex items-center">
-                                <span className={selectedOption === 'Solutions' ? 'text-[#2D63D7]' : 'hover:text-[#2D63D7] cursor-pointer'}>Solutions</span>
+                                <span className={selectedOption === 'Solutions' ? 'text-[#14213d]' : 'hover:text-[#14213d] cursor-pointer'}>Solutions</span>
                                 <img src="/images/dropdown.svg" alt="dropdown" className="ml-1 w-4 h-4" />
                             </button>
                         </li>
                         <li className="p-2.5 xl:p-6">
                             <button onMouseEnter={() => toggleIndustries('Industries')} className="focus:outline-none flex items-center">
-                                <span className={selectedOption === 'Industries' ? 'text-[#2D63D7]' : 'hover:text-[#2D63D7] cursor-pointer'}>Industries</span>
+                                <span className={selectedOption === 'Industries' ? 'text-[#14213d]' : 'hover:text-[#14213d] cursor-pointer'}>Industries</span>
                                 <img src="/images/dropdown.svg" alt="dropdown" className="ml-1 w-4 h-4" />
                             </button>
                         </li>
                         <li className="p-2.5 xl:p-6">
                             <button onMouseEnter={() => toggleAboutUs('About Us')}  className="focus:outline-none flex items-center">
-                                <span className={selectedOption === 'About Us' ? 'text-[#2D63D7]' : 'hover:text-[#2D63D7] cursor-pointer'}>About Us</span>
+                                <span className={selectedOption === 'About Us' ? 'text-[#14213d]' : 'hover:text-[#14213d] cursor-pointer'}>About Us</span>
                                 <img src="/images/dropdown.svg" alt="dropdown" className="ml-1 w-4 h-4" />
                             </button>
                         </li>
                         <li className="p-2.5 xl:p-6">
                             <button onMouseEnter={() => toggleAIResources('AI Resources')}  onClick={toggleAIResources} className="focus:outline-none flex items-center">
-                                <span className={selectedOption === 'AI resources' ? 'text-[#2D63D7]' : 'hover:text-[#2D63D7] cursor-pointer'}>AI Resources</span>
+                                <span className={selectedOption === 'AI resources' ? 'text-[#14213d]' : 'hover:text-[#14213d] cursor-pointer'}>AI Resources</span>
                                 <img src="/images/dropdown.svg" alt="dropdown" className="ml-1 w-4 h-4" />
                             </button>
                         </li>

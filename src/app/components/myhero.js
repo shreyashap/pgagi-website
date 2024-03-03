@@ -81,7 +81,7 @@ export default function HeroSection() {
                                     ]}
                                     wrapper="span"
                                     speed={50}
-                                    style={{ display: 'inline-block', color: '#2d63d7' }}
+                                    style={{ display: 'inline-block', color: '#14213d' }}
                                     repeat={Infinity}
                                 />
                             </div>
@@ -130,7 +130,7 @@ export default function HeroSection() {
                     </div>
 
                     <div className="mt-32 md:w-[45%] ">
-                        <Image src={heroImage} priority="true" alt="Hero Image" className=" md:pb-36 md:h-full md:w-full  h-[300px] w-[400px] md:mr-16 md:object-contain " />
+                        <Image src={heroImage} priority="true" alt="Hero Image" className=" md:pb-36 md:h-full md:w-full  h-[500px] w-[800px] md:mr-16 md:object-contain " />
                     </div>
                 </div>
 
