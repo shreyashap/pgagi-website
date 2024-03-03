@@ -2,6 +2,10 @@ import Footer from "./components/footer";
 import HeroSection from "./components/myhero";
 
 import Navbar from "./components/navbar";
+import Design from "./components/design";
+import Cards from "./components/cards";
+import Book from "./components/bookcall";
+
 
 import React from "react";
 import PartnerCompanies from "./components/partner";
@@ -14,8 +18,14 @@ export default function Page() {
       <div className="min-h-screen ">
         <HeroSection />
         <PartnerCompanies />
+        
       </div>
+      <Design/>
+      <Cards/>
+      <Book/>
+      
       <Footer />
+      
     </div>
   );
 };

@@ -1,4 +1,3 @@
-
 'use client'
 
 import Image from "next/image"
@@ -60,8 +59,8 @@ export default function HeroSection() {
 
                 <div className="flex flex-col md:flex-row justify-between space-x-2 ">
                     <div className="text-center md:text-left mt-32 md:w-[55%] md:ml-8 lg:ml-12 xl:ml-16 ">
-                        <div className="font-medium text-white-900 text-sm md:text-md leading-normal md:mb-2 "> Start automating your tasks now</div>
-                        <div className="font-extrabold text-white-900 text-3xl md:text-4xl  lg:text-5xl xl:text-6xl leading-normal mb-3 mygrad ">Your Go-To <br/>AI Consultancy
+                        <div className="font-bold text-white-900 text-sm md:text-md leading-normal md:mb-2 mt-2 "> Start automating your tasks now</div>
+                        <div className="font-extrabold text-white-900 text-3xl md:text-4xl  lg:text-5xl xl:text-6xl leading-normal mb-8 mygrad ">Your Go-To <br/>AI Consultancy
                             <div className="md:pt-1 lg:pt-5"> for {' '}
 
                                 <TypeAnimation
@@ -87,8 +86,8 @@ export default function HeroSection() {
                                 />
                             </div>
                         </div>
-                            <div className="text-center">
-                        <div className=" text-mg md:text-md mt-4 leading-normal mb-4 bg-warning p-1 px-3 rounded-2xl w-fit">AI Adoptions typically result in:</div>
+                            <div className="text-center mt-10 ">
+                        <div className=" text-mg md:text-md mt-4 leading-normal mb-4  bg-warning p-1 px-3 rounded-2xl w-fit">AI Adoptions typically result in:</div>
                         <div className="pb-10">
 
                             <ul class="max-w-md space-y-3 text-gray-700 list-inside ">
@@ -115,20 +114,23 @@ export default function HeroSection() {
                         </div>
                         </div>
 
-                        <div className="w-full flex flex-col gap-4 md:flex-row md:justify-start justify-between items-center lg:gap-6 md:gap-6 ">
+                        <div className="w-full flex  flex-col gap-4 md:flex-row py-4 px-6 md:justify-start justify-between items-center lg:gap-6 md:gap-6  ">
                       <Calendlylink/>
 
 
-                        <button className="  border border-primary  hover:bg-blue-500 hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center gap-3">
-                            <Mysvg />
+                      <button className="border border-primary  text-blue-500 text-gray-800 font-bold py-4 px-6 rounded inline-flex items-center gap-3 text-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer">
+    <Mysvg />
+    <span>See case studies</span>
+</button>
 
-                            <span>See case studies</span>
-                        </button>
+
+
+
                         </div>
                     </div>
 
                     <div className="mt-32 md:w-[45%] ">
-                        <Image src={heroImage} priority="true" alt="Hero Image" className=" md:pb-36 md:h-full md:w-full l:h-[800px] l:w-[900px] h-[200px] w-[300px] md:mr-16 md:object-contain " />
+                        <Image src={heroImage} priority="true" alt="Hero Image" className=" md:pb-36 md:h-full md:w-full  h-[300px] w-[400px] md:mr-16 md:object-contain " />
                     </div>
                 </div>
 
@@ -137,6 +139,7 @@ export default function HeroSection() {
         </div>
     )
 }
+
 
 
 
