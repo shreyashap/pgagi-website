@@ -3,8 +3,12 @@
 import React, { useState } from 'react';
 import Calendlylink from '../buttons/callbutton';
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 export default function Navbar() {
+
+    
     const [showIndustries, setShowIndustries] = useState(false);
     const [showAboutUs, setShowAboutUs] = useState(false);
     const [showSolutions, setShowSolutions] = useState(false);
@@ -44,8 +48,12 @@ export default function Navbar() {
         setShowAboutUs(false); // Close About Us section
         setShowSolutions(false); // Close Solutions section
         setSelectedOption('AI resources');
+
+
     };
 
+
+   
    
 
 
@@ -129,7 +137,7 @@ export default function Navbar() {
                         <div className="py-6 px-6 flex items-start  w-full md:w-1/3" style={{ position: 'relative' }}>
                             <div className="h-full flex-grow hover:bg-[#F5F6FC]  mb-6 group" style={{ width: '100%', height: '100%' }}>
                                 <div className="flex items-center">
-                                    <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3">AI+UX eBook</h1>
+                                    <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3">AI+ eBook</h1>
                                     <img
                                         src="/images/rightarrow.png"
                                         alt="Arrow"
@@ -144,7 +152,7 @@ export default function Navbar() {
                             <div className="h-full flex-grow flex flex-col" style={{ width: '100%', height: '100%' }}>
                                 <div className='hover:bg-[#F5F6FC]  mb-6 group' style={{ width: '100%' }}>
                                     <div className="flex items-center">
-                                        <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>UX Blog</h1>
+                                        <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}> Blog</h1>
                                         <img
                                             src="/images/rightarrow.png"
                                             alt="Arrow"
@@ -154,7 +162,7 @@ export default function Navbar() {
                                     </div>
                                     <p className="text-gray-600 hover:text-black    text-sm leading-relaxed mb-5">Articles and Stories</p>
                                 </div>
-                                <div className='hover:bg-[#F5F6FC]  mb-6 group' style={{ width: '100%' }}>
+                                {/* <div className='hover:bg-[#F5F6FC]  mb-6 group' style={{ width: '100%' }}>
                                     <div className="flex items-center">
                                         <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>See All Downloads</h1>
                                         <img
@@ -165,7 +173,7 @@ export default function Navbar() {
                                         />
                                     </div>
                                     <p className="text-gray-600 hover:text-black    text-sm leading-relaxed mb-5">UX Templates,checklist & Guides</p>
-                                </div>
+                                </div> */}
                             </div>
                             {/* Vertical Line */}
                             <div className="absolute h-full w-px bg-gray-200 top-0 right-0"></div>
@@ -173,7 +181,7 @@ export default function Navbar() {
                         <div className="py-6 px-6 flex items-start hover:bg-[#F5F6FC]  mb-6 group w-full md:w-1/3">
                             <div className="h-full flex-grow" style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%' }}>
                                 <div className="flex items-center">
-                                    <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>UX pilot</h1>
+                                    <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>AI pilot</h1>
                                     <img
                                         src="/images/rightarrow.png"
                                         alt="Arrow"
@@ -336,7 +344,7 @@ export default function Navbar() {
         <section className="text-gray-600 body-font mt-0">
             <div className="container px-5 py-12 mx-auto">
                 <div className="flex flex-wrap items-start justify-center -mx-8 -my-8">
-                <div className="py-8 px-8  flex items-start justify-center" style={{ marginLeft: '1rem', padding: '2rem', maxWidth: '400px', borderRadius: '8px' }} onMouseEnter={() => toggleAboutUs('Our core principles and beliefs')}>
+                {/* <div className="py-8 px-8  flex items-start justify-center" style={{ marginLeft: '1rem', padding: '2rem', maxWidth: '400px', borderRadius: '8px' }} onMouseEnter={() => toggleAboutUs('Our core principles and beliefs')}>
                         <div className="h-full flex-grow">
                             <div className="flex hover:bg-[#F5F6FC]  mb-6 group items-center">
                                 <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>Our Story and why Us</h1>
@@ -348,20 +356,22 @@ export default function Navbar() {
                                 />
                             </div>
                         </div>
-                    </div>
-                    {/* <div className="py-8 px-8  flex items-start justify-center" style={{ marginLeft: '1rem', padding: '2rem', maxWidth: '400px', borderRadius: '8px' }} onMouseEnter={() => toggleAboutUs('Our core principles and beliefs')}>
-                        <div className="h-full flex-grow">
-                            <div className="flex hover:bg-[#F5F6FC]  mb-6 group items-center">
-                                <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>Our core principles and beliefs</h1>
-                                <img
-                                    src="/images/rightarrow.png"
-                                    alt="Arrow"
-                                    style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-                                    className='group-hover:translate-x-1'
-                                />
-                            </div>
-                        </div>
                     </div> */}
+                    <div className="py-8 px-8 flex items-start justify-center" style={{ marginLeft: '1rem', padding: '2rem', maxWidth: '400px', borderRadius: '8px' }} onMouseEnter={() => toggleAboutUs('Our core principles and beliefs')}>
+      <div className="h-full flex-grow">
+        <div className="flex hover:bg-[#F5F6FC] mb-6 group items-center">
+          <Link href="/aboutus" className="title-font text-md font-bold text-gray-600 hover:text-black mb-3" style={{ marginRight: '10px' }}>
+            Our core principles and beliefs
+          </Link>
+          <img
+            src="/images/rightarrow.png"
+            alt="Arrow"
+            style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
+            className='group-hover:translate-x-1'
+          />
+        </div>
+      </div>
+    </div>
                 </div>
             </div>
         </section>
