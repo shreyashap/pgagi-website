@@ -55,11 +55,11 @@ const Services = () => {
     return (
       <>
         <span id="services"></span>
-        <div className="py-10 relative">
+        <div className="py-10 relative ">
           <div className="container mx-auto w-3/5">
           <div className="mb-auto text-center max-w-[400px] mx-auto    ">
           <h1 className="text-2xl lg:text-4xl mb-5 font-bold text-black dark:text-white whitespace-nowrap md:text-center flex justify-center items-center">
-  Here's how we make <br /> products grow
+  Here&apos;s how we make <br /> products grow
 </h1>
 
   <p className="text-sm text-black mb-5 dark:text-gray-400 hidden md:block">

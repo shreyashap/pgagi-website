@@ -70,9 +70,13 @@ const Footer = () => {
                 <div className="w-full lg:w-4/12 px-4 ml-auto">
                   <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2 whitespace-nowrap">Useful Links</span>
                   <ul className="list-unstyled">
-                    <li>
-                      <a href="/aboutus" className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">About Us</a>
-                    </li>
+                  <li>
+  <Link href="/aboutus" className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">
+    About Us
+  </Link>
+</li>
+
+
                     <li>
                       <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">Blog</a>
                     </li>
@@ -183,9 +187,11 @@ const Footer = () => {
             </div>
             <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2 whitespace-nowrap">Useful Links</span>
             <ul className="list-unstyled">
-                    <li>
-                      <a href="/aboutus" className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">About Us</a>
-                    </li>
+            <li>
+  <Link href="/aboutus" className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">
+    About Us
+  </Link>
+</li>
                     <li>
                       <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">Blog</a>
                     </li>

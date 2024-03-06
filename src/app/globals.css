@@ -60,3 +60,10 @@
     padding: 2px;
     border-radius: 50%;
 }
+
+@media (max-width: 640px) { /* Adjust the max-width as needed for your mobile breakpoint */
+  .mobile-full-width {
+    width: 100%; /* Set the desired width for mobile screens */
+    
+  }
+}

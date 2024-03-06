@@ -68,12 +68,11 @@ export default function Navbar() {
              <div>
             {/* Thin horizontal blue line */}
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '30px', backgroundColor: '#14213d', width: '100%' }}>
-        <span style={{ marginRight: '10px' }} className='text-white'>AI Calling Agent</span>
-        <div>
-            <span style={{ fontWeight: 'bold' }} className='text-white' >Learn more</span>
-            
-            </div>
+    <span style={{ marginRight: '10px' }} className='text-white'>AI Calling Agent</span>
+    <div>
+        <Link href="/aboutus" style={{ fontWeight: 'bold' }} className='text-white'>Learn more</Link>
     </div>
+</div>
             
             <div className="bg-white border-b-2 h-24 hidden md:flex md:justify-evenly md:px-8 lg:px-12 xl:px-24 ">
                 {/* Logo */}
@@ -94,25 +93,25 @@ export default function Navbar() {
                         <li className="p-2.5 xl:p-6">
                             <button onMouseEnter={() => toggleSolutions('Solutions')}  className="focus:outline-none flex items-center">
                                 <span className={selectedOption === 'Solutions' ? 'text-[#14213d]' : 'hover:text-[#14213d] cursor-pointer'}>Solutions</span>
-                                <img src="/images/dropdown.svg" alt="dropdown" className="ml-1 w-4 h-4" />
+                                <Image src="/images/dropdown.svg" width={20} height={20} alt="dropdown" className="ml-1 w-4 h-4" />
                             </button>
                         </li>
                         <li className="p-2.5 xl:p-6">
                             <button onMouseEnter={() => toggleIndustries('Industries')} className="focus:outline-none flex items-center">
                                 <span className={selectedOption === 'Industries' ? 'text-[#14213d]' : 'hover:text-[#14213d] cursor-pointer'}>Industries</span>
-                                <img src="/images/dropdown.svg" alt="dropdown" className="ml-1 w-4 h-4" />
+                                <Image src="/images/dropdown.svg" width={20} height={20} alt="dropdown" className="ml-1 w-4 h-4" />
                             </button>
                         </li>
                         <li className="p-2.5 xl:p-6">
                             <button onMouseEnter={() => toggleAboutUs('About Us')}  className="focus:outline-none flex items-center">
                                 <span className={selectedOption === 'About Us' ? 'text-[#14213d]' : 'hover:text-[#14213d] cursor-pointer'}>About Us</span>
-                                <img src="/images/dropdown.svg" alt="dropdown" className="ml-1 w-4 h-4" />
+                                <Image src="/images/dropdown.svg" width={20} height={20} alt="dropdown" className="ml-1 w-4 h-4" />
                             </button>
                         </li>
                         <li className="p-2.5 xl:p-6">
                             <button onMouseEnter={() => toggleAIResources('AI Resources')}  onClick={toggleAIResources} className="focus:outline-none flex items-center">
                                 <span className={selectedOption === 'AI resources' ? 'text-[#14213d]' : 'hover:text-[#14213d] cursor-pointer'}>AI Resources</span>
-                                <img src="/images/dropdown.svg" alt="dropdown" className="ml-1 w-4 h-4" />
+                                <Image src="/images/dropdown.svg" width={20} height={20} alt="dropdown" className="ml-1 w-4 h-4" />
                             </button>
                         </li>
                     </ul>
@@ -134,7 +133,7 @@ export default function Navbar() {
             {showAIResources && (
                 <div className="bg-white border-b-2 hidden md:flex md:justify-evenly md:px-8 lg:px-12 xl:px-24 py-6" onMouseLeave={() => setShowAIResources(false)}>
                     <div className="text-gray-600 body-font mt-0 flex flex-wrap justify-center" style={{ width: '80%', height: '280px', overflow: 'hidden' }}>
-                        <div className="py-6 px-6 flex items-start  w-full md:w-1/3" style={{ position: 'relative' }}>
+                        {/* <div className="py-6 px-6 flex items-start  w-full md:w-1/3" style={{ position: 'relative' }}>
                             <div className="h-full flex-grow hover:bg-[#F5F6FC]  mb-6 group" style={{ width: '100%', height: '100%' }}>
                                 <div className="flex items-center">
                                     <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3">AI+ eBook</h1>
@@ -147,18 +146,21 @@ export default function Navbar() {
                                 </div>
                                 <p className="text-gray-600 hover:text-black    text-sm leading-relaxed mb-5">Maximize your AI knowledge</p>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="py-6 px-6 flex items-start w-full md:w-1/3" style={{ position: 'relative' }}>
                             <div className="h-full flex-grow flex flex-col" style={{ width: '100%', height: '100%' }}>
                                 <div className='hover:bg-[#F5F6FC]  mb-6 group' style={{ width: '100%' }}>
                                     <div className="flex items-center">
                                         <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}> Blog</h1>
-                                        <img
-                                            src="/images/rightarrow.png"
-                                            alt="Arrow"
-                                            style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-                                            className='group-hover:translate-x-1'
-                                        />
+                                        <Image
+    src="/images/rightarrow.png"
+    alt="Arrow"
+    width={20}
+    height={20}
+    style={{ transition: 'transform 0.1s' }}
+    className='group-hover:translate-x-1'
+/>
+
                                     </div>
                                     <p className="text-gray-600 hover:text-black    text-sm leading-relaxed mb-5">Articles and Stories</p>
                                 </div>
@@ -176,10 +178,10 @@ export default function Navbar() {
                                 </div> */}
                             </div>
                             {/* Vertical Line */}
-                            <div className="absolute h-full w-px bg-gray-200 top-0 right-0"></div>
+                            {/* <div className="absolute h-full w-px bg-gray-200 top-0 right-0"></div> */}
                         </div>
                         <div className="py-6 px-6 flex items-start hover:bg-[#F5F6FC]  mb-6 group w-full md:w-1/3">
-                            <div className="h-full flex-grow" style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%' }}>
+                            {/* <div className="h-full flex-grow" style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%' }}>
                                 <div className="flex items-center">
                                     <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>AI pilot</h1>
                                     <img
@@ -195,7 +197,7 @@ export default function Navbar() {
                                         <source src="https://www.datocms-assets.com/16499/1699230326-customws.mp4" type="video/mp4" />
                                     </video>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -209,24 +211,30 @@ export default function Navbar() {
                                 <div className='hover:bg-[#F5F6FC]  mb-6 group mb-6'>
                                     <div className="flex items-center">
                                         <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-2 mr-2">Create MVP</h1>
-                                        <img
-                                            src="/images/rightarrow.png"
-                                            alt="Arrow"
-                                            style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-                                            className='group-hover:translate-x-1'
-                                        />
+                                        <Image
+    src="/images/rightarrow.png"
+    alt="Arrow"
+    width={20}
+    height={20}
+    style={{ transition: 'transform 0.1s' }}
+    className='group-hover:translate-x-1'
+/>
+
                                     </div>
                                     <p className="text-gray-600 hover:text-black    text-sm leading-relaxed mb-4">Create a standout AI-powered prototype that impresses investors with seamless functionality and cutting-edge technology..</p>
                                 </div>
                                 <div className='hover:bg-[#F5F6FC]  mb-6 group'>
     <div className="flex items-center">
         <h1 className="title-font text-md font-bold text-gray-600 hover:text-black mb-2 mr-2">Improve Product</h1>
-        <img
-            src="/images/rightarrow.png"
-            alt="Arrow"
-            style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-            className='group-hover:translate-x-1'
-        />
+        <Image
+    src="/images/rightarrow.png"
+    alt="Arrow"
+    width={20}
+    height={20}
+    style={{ transition: 'transform 0.1s' }}
+    className='group-hover:translate-x-1'
+/>
+
     </div>
     <p className="text-gray-600 hover:text-black text-sm leading-relaxed mb-4">Enhance your product with AI integration for optimized processes, improved user experience, and smart features, all without adding complexity.</p>
 </div>
@@ -235,12 +243,15 @@ export default function Navbar() {
                                     <div className="flex items-center">
                                         <div className="flex items-center">
                                             <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-2 mr-2">AI Research</h1>
-                                            <img
-                                                src="/images/rightarrow.png"
-                                                alt="Arrow"
-                                                style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-                                                className='group-hover:translate-x-1'
-                                            />
+                                            <Image
+    src="/images/rightarrow.png"
+    alt="Arrow"
+    width={20}
+    height={20}
+    style={{ transition: 'transform 0.1s' }}
+    className='group-hover:translate-x-1'
+/>
+
                                         </div>
                                     </div>
                                     <p className="text-gray-600 hover:text-black     text-sm leading-relaxed mb-4">Gain deeper insights with AI-driven research, accurately predicting market behaviors and user preferences through advanced analytics.</p>
@@ -253,29 +264,33 @@ export default function Navbar() {
                                 <div className='hover:bg-[#F5F6FC]  mb-6 group '>
                                     <div className="flex items-center">
                                         <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-2 mr-2">AI Calling Agent Subscription:</h1>
-                                        <img
-                                            src="/images/rightarrow.png"
-                                            alt="Arrow"
-                                            style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-                                            className='group-hover:translate-x-1'
-                                        />
+                                        <Image
+    src="/images/rightarrow.png"
+    alt="Arrow"
+    width={20}
+    height={20}
+    style={{ transition: 'transform 0.1s' }}
+    className='group-hover:translate-x-1'
+/>
+
                                     </div>
                                     <ul className="list-disc pl-0 text-gray-600 hover:text-black">
                                         <li className="flex items-center mb-2" style={{ listStyle: 'none' }}>
-                                            <img src="/images/tick.png" alt="Tick" style={{ width: '20px', height: '20px', marginRight: '10px' }} />
+                                        <Image src="/images/tick.png" alt="Tick" width={20} height={20} className="mr-2" />
                                             <span className='text-sm text-gray-600 hover:text-black '>Unlimited AI Calls:</span>
                                         </li>
                                         <li className="flex items-center mb-2" style={{ listStyle: 'none' }}>
-                                            <img src="/images/tick.png" alt="Tick" style={{ width: '20px', height: '20px', marginRight: '10px' }} />
+                                        <Image src="/images/tick.png" alt="Tick" width={20} height={20} className="mr-2" />
                                             <span className='text-sm text-gray-600 hover:text-black '>Humanized Interactions:</span> 
                                         </li>
                                         <li className="flex items-center mb-2" style={{ listStyle: 'none' }}>
-                                            <img src="/images/tick.png" alt="Tick" style={{ width: '20px', height: '20px', marginRight: '10px' }} />
+                                        <Image src="/images/tick.png" alt="Tick" width={20} height={20} className="mr-2" />
+
                                             <span className='text-sm text-gray-600 hover:text-black '>Seamless CRM Integration:
 </span>
                                         </li>
                                         <li className="flex items-center mb-2" style={{ listStyle: 'none' }}>
-                                            <img src="/images/tick.png" alt="Tick" style={{ width: '20px', height: '20px', marginRight: '10px' }} />
+                                        <Image src="/images/tick.png" alt="Tick" width={20} height={20} className="mr-2" />
                                             <span className='text-sm text-gray-600 hover:text-black '>Advanced Analytics & Insights with AI/ ML:
 </span>
                                         </li>
@@ -291,12 +306,15 @@ export default function Navbar() {
                                     <div className="flex items-center">
                                         <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-2 mr-2">AI Strategy & Optimization Review:
 </h1>
-                                        <img
-                                            src="/images/rightarrow.png"
-                                            alt="Arrow"
-                                            style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-                                            className='group-hover:translate-x-1'
-                                        />
+<Image
+    src="/images/rightarrow.png"
+    alt="Arrow"
+    width={20}
+    height={20}
+    style={{ transition: 'transform 0.1s' }}
+    className='group-hover:translate-x-1'
+/>
+
                                     </div>
                                     <p className="text-gray-600 hover:text-black    text-sm leading-relaxed mb-4 text-md"><span className='font-bold'>Comprehensive AI Assessment:</span> Obtain an extensive 60+ page analysis of your current AI capabilities and future potential, identifying key areas for immediate improvement and strategic growth for the developers.
 
@@ -363,12 +381,15 @@ export default function Navbar() {
           <Link href="/aboutus" className="title-font text-md font-bold text-gray-600 hover:text-black mb-3" style={{ marginRight: '10px' }}>
             Our core principles and beliefs
           </Link>
-          <img
-            src="/images/rightarrow.png"
-            alt="Arrow"
-            style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-            className='group-hover:translate-x-1'
-          />
+          <Image
+    src="/images/rightarrow.png"
+    alt="Arrow"
+    width={20}
+    height={20}
+    style={{ transition: 'transform 0.1s' }}
+    className='group-hover:translate-x-1'
+/>
+
         </div>
       </div>
     </div>

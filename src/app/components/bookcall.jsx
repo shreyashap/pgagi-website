@@ -16,14 +16,15 @@ export default function Book() {
               <Calendlylink />
             </div> */}
           </div>
-          <div className=" justify-center item-center flex mt-8 w-full lg:w-1/2 sm:w-full md:justify-center md:w-full bg-white p-6 rounded-lg shadow-lg" style={{ marginTop: '-100px' }}>
-            <iframe
-              src={url}
-              width="100%" 
-              height="600px"
-              frameBorder="0"
-            ></iframe>
-          </div>
+          <div className="justify-center items-center flex mt-8 w-full lg:w-1/2 sm:w-full md:justify-center md:w-full bg-white p-2 sm:p-6 rounded-lg shadow-lg" style={{ marginTop: '-100px' }}>
+  <iframe
+    src={url}
+    width="100%" 
+    height="600px"
+    frameBorder="0"
+  ></iframe>
+</div>
+
         </div>
       </div>
     );
