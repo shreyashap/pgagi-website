@@ -85,11 +85,11 @@ export default function Navbar() {
                 {/* Navbar links */}
                 <div className="header-links contents font-semibold text-base lg:text-base ">
                     <ul className="flex items-center ml-4  lg:ml-5 xl:ml-2 lg:mr-8">
-                        <li className="p-2.5 xl:p-6 text-center">
-                            <a href="" style={{textDecoration: 'none'}}>
-                                <span>Our Projects</span>
-                            </a>
-                        </li>
+                    <li className="p-2.5 xl:p-6 text-center">
+  <a className="text-decoration-none">
+    <span>Our Projects</span>
+  </a>
+</li>
                         <li className="p-2.5 xl:p-6">
                             <button onMouseEnter={() => toggleSolutions('Solutions')}  className="focus:outline-none flex items-center">
                                 <span className={selectedOption === 'Solutions' ? 'text-[#14213d]' : 'hover:text-[#14213d] cursor-pointer'}>Solutions</span>

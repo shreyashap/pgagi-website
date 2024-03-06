@@ -14,13 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-       
         <title>{metadata.title}</title>
-        
-        <link rel="icon" href="/pgagi.ico" />
-       
+        <link rel="icon" href="/images/pgagi.png" /> {/* Link to the favicon */}
         <meta name="description" content={metadata.description} />
-        
         <meta name="tag" content={metadata.tag} />
       </Head>
       <body className={inter.className}>{children}</body>

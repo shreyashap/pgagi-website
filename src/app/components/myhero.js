@@ -59,12 +59,12 @@ export default function HeroSection() {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
     return (
-        <div className="container max-w-screen-xl mx-auto px-4 bg-white">
+        <div className="container max-w-screen-xl mx-auto px-4 bg-white ">
             {/* Heading and Navbar button */}
             <div className="flex justify-between items-center py-4 relative">
     <div className="font-bold text-xl md:text-xl md:hidden">PG-AGI</div>
     <button
-        className="md:hidden bg-transparent p-2 rounded-lg focus:outline-none"
+        className="md:hidden bg-transparent p-2 rounded-lg focus:outline-none "
         onClick={() => setIsNavbarOpen(!isNavbarOpen)}
     >
         <Image src="/images/menu.png" alt="Menu" width={30} height={30} />
@@ -74,10 +74,10 @@ export default function HeroSection() {
 
 
             <div className="flex flex-col md:flex-row justify-between space-x-2">
-                <div className="text-center md:text-left mt-32 md:w-[55%] md:ml-8 lg:ml-12 xl:ml-16">
+                <div className="text-center md:text-left mt-5 md:w-[55%] md:ml-8 lg:ml-12 xl:ml-16">
                     {/* Content */}
                     <div className="font-bold text-white-900 text-sm md:text-md leading-normal md:mb-2 mt-2"> Start your AI journey with us</div>
-                    <div className="font-extrabold text-white-900 text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-normal mb-8 mygrad ">Your Go-To <br />AI Consultancy
+                    <div className="font-extrabold text-white-900 text-2xl md:text-4xl lg:text-4xl xl:text-6xl leading-normal mb-8 mygrad ">Your Go-To <br />AI Consultancy
                         <div className="md:pt-1 lg:pt-5"> for {' '}
                             <TypeAnimation
                                 sequence={[
@@ -124,13 +124,15 @@ export default function HeroSection() {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-full flex flex-col gap-4 md:flex-row py-4 px-6 md:justify-start justify-between items-center lg:gap-6 md:gap-6">
-                        <Calendlylink />
-                        <button className="border border-primary   text-gray-800 font-bold py-4 px-6  rounded inline-flex items-center gap-3 text-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer">
-                            <Mysvg />
-                            <span>See case studies</span>
-                        </button>
-                    </div>
+                    <div className="w-full flex flex-col gap-4 md:flex-row py-0 px-6 md:justify-start justify-between items-center mt-0 lg:gap-6 md:gap-6">
+    <div className="w-full md:w-auto ">
+        <Calendlylink />
+    </div>
+    <button className=" border border-primary text-gray-800 font-bold py-4 px-6 rounded inline-flex items-center gap-3 text-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer">
+        <Mysvg />
+        <span>See case studies</span>
+    </button>
+</div>
                 </div>
                 <div className="mt-2 md:w-[45%]">
                     <Image src={heroImage} priority="true" alt="Hero Image" className=" md:pb-20 md:h-full md:w-full  h-[500px] w-[800px] md:mr-16 md:object-contain  " />

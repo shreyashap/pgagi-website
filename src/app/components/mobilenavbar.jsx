@@ -30,10 +30,10 @@ const Mobilenavbar = ({ closeNavbar }) => {
     </Link>
 </div>
 <button
-    className="absolute right-0 top-0 bg-transparent p-5 rounded-lg focus:outline-none"
+    className="absolute right-0 top-0 bg-transparent p-7 rounded-lg focus:outline-none"
     onClick={closeNavbar}
   >
-    <Image src="/images/x-button.png" alt="Close Navbar" width={30} height={30} />
+    <Image src="/images/x-button.png" alt="Close Navbar" width={15} height={15} />
   </button>
                 <button className="mt-auto py-4 bg-white text-[#14213D] text-lg font-semibold text-center w-full">Contact Us</button>
             </div>
