@@ -12,9 +12,6 @@ const About = () => {
         />
       </div>
       <div className="flex-1 p-8 text-white ">
-        <p className="text-md text-center mb-5">
-        Human history is a tapestry woven with the threads of capabilities and tools. Each era ushers in a rare new capability, often stumbled upon rather than deliberately crafted. From the mastery of fire in our primitive past to the harnessing of electricity in the 1800s, each discovery has been a leap forward. The 1900s presented us with the marvel of computing, and now, in the 21st century, we stand on the brink of the artificial intelligence revolution.
-        </p>
 
         <p className="text-md text-center mb-5">
         Human history is a tapestry woven with the threads of capabilities and tools. Each era ushers in a rare new capability, often stumbled upon rather than deliberately crafted. From the mastery of fire in our primitive past to the harnessing of electricity in the 1800s, each discovery has been a leap forward. The 1900s presented us with the marvel of computing, and now, in the 21st century, we stand on the brink of the artificial intelligence revolution.
