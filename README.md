@@ -1,78 +1,36 @@
-
-
-# PGAGI website
-
-This is a modern web application built with Next.js and styled using Tailwind CSS. It offers a responsive, fast, and sleek user interface, making it perfect for [briefly describe the purpose or target users of the app].
-
-## Features
-
-- List the key features of your application.
-- Responsive design.
-- Fast loading times.
-- more features soon...
-
-## Prerequisites
-
-Before you begin, ensure you have the following installed on your system:
-- Node.js (v12.0.0 or later)
-- npm (v6.0.0 or later)
-
-You can download Node.js and npm from [https://nodejs.org/](https://nodejs.org/).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Cloning the Repository
-
-First, clone the repository to your local machine using Git.
-
-```bash
-git clone https://github.com/PG-AGI/pgagi-website.git
-cd pgagi-website
-```
-
-### Installing Dependencies
-
-After cloning the project, install the necessary dependencies by running:
-
-```bash
-npm install
-```
-
-### Running the Application
-
-To run the application on your local machine, execute the following command:
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-This command starts the development server on [http://localhost:3000](http://localhost:3000). Open your browser and navigate to this URL to view the application.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Building for Production
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-To create a production build of your application, run:
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-```bash
-npm run build
-```
+## Learn More
 
-Then, to start the production server, use:
+To learn more about Next.js, take a look at the following resources:
 
-```bash
-npm start
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Deploying
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-You can deploy your Next.js application to a variety of hosting services. [Vercel](https://vercel.com/) (from the creators of Next.js) is highly recommended for easy deployment and seamless integration. Follow the hosting provider's instructions for deployment steps.
+## Deploy on Vercel
 
-## Contributing
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Contributions are welcome! Please read our [contributing guide](LINK_TO_CONTRIBUTING_GUIDE) for details on our code of conduct and the process for submitting pull requests to us.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
